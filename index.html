@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sauod Azad | Software Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Sauod Azad - Software Engineer specializing in Native Android Development (Kotlin/Java), Full-Stack Web Development (PHP/JS), and 3NF Relational Database Design.">
+  <meta name="keywords" content="Sauod Azad, Software Engineer, Android Developer, Full Stack Developer, Kotlin, Java, PHP, MySQL, Portfolio, Riphah International University">
+  <meta name="author" content="Sauod Azad">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sauod Azad | Software Engineer Portfolio">
+  <meta property="og:description" content="Motivated BS Software Engineering student proficient in Native Android, Full-Stack Web, and Database Architecture.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient background lighting effects -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" aria-label="Sauod Azad Homepage">
+        <span class="logo-symbol">&lt;SA/&gt;</span>
+        <span class="logo-text">Sauod Azad</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#competencies" class="nav-link">Competencies</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons in Nav -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="assets/docs/Sauod_Azad_Resume.pdf" class="btn btn-sm btn-outline" download="Sauod_Azad_CV.pdf">
+          <i class="fa-solid fa-download"></i> <span>CV</span>
+        </a>
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#competencies" class="mobile-link"><i class="fa-solid fa-award"></i> Competencies</a></li>
+        <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <a href="assets/docs/Sauod_Azad_Resume.pdf" class="btn btn-outline w-full" download="Sauod_Azad_CV.pdf">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+        </a>
+        <a href="assets/docs/E-Cargo-Bility-v1.0.apk" class="btn btn-primary w-full" download="E-Cargo-Bility.apk">
+          <i class="fa-brands fa-android"></i> Download Android APK
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Left / Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Available for Full-Time & Freelance Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text">Sauod Azad</span>
+          </h1>
+
+          <div class="typing-container" aria-live="polite">
+            <span class="typing-prefix">I build </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            BS Software Engineering student at <strong>Riphah International University</strong> (2022–2026). 
+            Passionate about crafting high-performance <strong>Native Android Applications</strong> (Kotlin/Java) 
+            and scalable <strong>Full-Stack Web Systems</strong> (PHP/MySQL/JS) from requirements to production deployment.
+          </p>
+
+          <!-- Hero CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View Key Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/docs/Sauod_Azad_Resume.pdf" class="btn btn-outline btn-lg" download="Sauod_Azad_CV.pdf">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Download CV</span>
+            </a>
+            <button class="btn btn-glass btn-lg" id="openResumeModalBtn" title="Preview Resume in Modal">
+              <i class="fa-solid fa-eye"></i>
+              <span>Quick Preview</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/SauodAzad/my-projects" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://wa.me/923135151023" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Chat on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:sauodriphah@gmail.com" class="social-icon" aria-label="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+923135151023" class="social-icon" aria-label="Phone Call">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+
+          <!-- Highlight Badges -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>BSSE Riphah</strong>
+                <span>2022 – 2026</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-brands fa-android"></i>
+              <div>
+                <strong>Native Android</strong>
+                <span>Kotlin & Java</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-database"></i>
+              <div>
+                <strong>Full-Stack & 3NF</strong>
+                <span>PHP, JS, MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right / Picture Card -->
+        <div class="hero-visual">
+          <div class="picture-card-wrapper">
+            <div class="picture-frame">
+              <div class="image-overlay"></div>
+              <img src="assets/images/profile.jpg" alt="Sauod Azad - Software Engineer" class="profile-photo" width="460" height="600" fetchpriority="high">
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-left animate-float-slow">
+              <div class="badge-icon android"><i class="fa-brands fa-android"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">Android SDK</span>
+                <span class="badge-sub">Kotlin & Java</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right animate-float">
+              <div class="badge-icon web"><i class="fa-solid fa-code"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">Full-Stack Web</span>
+                <span class="badge-sub">PHP & MySQL 3NF</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-middle-left animate-float-fast">
+              <div class="badge-icon quality"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">Software Quality</span>
+                <span class="badge-sub">Test Case & QA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS / STATS STRIP -->
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-number">4th Year</h3>
+            <p class="stat-label">Software Engineering Student</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-number">E-Cargo-Bility</h3>
+            <p class="stat-label">Complete Freight Booking Platform</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-number">Multi-Module</h3>
+            <p class="stat-label">Web, Native Android & APIs</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-number">End-to-End</h3>
+            <p class="stat-label">Full SDLC Lifecycle Delivery</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Engineering Reliable, Scalable & Impactful Software</h2>
+          <p class="section-subtitle">A synthesis of academic rigor and practical, production-ready engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <div class="bio-header">
+              <div class="bio-avatar">
+                <img src="assets/images/profile.jpg" alt="Sauod Azad portrait" width="70" height="70">
+              </div>
+              <div>
+                <h3 class="bio-name">Sauod Azad</h3>
+                <p class="bio-role">Software Engineer • Rawalpindi, Pakistan</p>
+              </div>
+            </div>
+
+            <p class="bio-text">
+              I am a motivated BS Software Engineering student (2022–2026) at <strong>Riphah International University</strong> with 
+              hands-on experience across the complete software development lifecycle — from rigorous requirements gathering, 
+              domain modeling, and 3NF database design through to testing and deployment.
+            </p>
+            <p class="bio-text">
+              I have architected and delivered <strong>E-Cargo-Bility</strong>, an end-to-end freight and cargo booking platform 
+              incorporating real-time trip request matching, dynamic fare calculation, multi-role user & driver interfaces, 
+              and companion native Android applications. I combine clean OOP principles with defensive coding practices to ensure 
+              every system I build is performant, maintainable, and reliable.
+            </p>
+
+            <div class="bio-info-chips">
+              <div class="info-chip">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Gulraiz Phase 2, Rawalpindi</span>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:sauodriphah@gmail.com">sauodriphah@gmail.com</a>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+923135151023">0313-5151023</a>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-language"></i>
+                <span>English (Proficient), Urdu (Native)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-features-column">
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+              <div class="feature-content">
+                <h4>Structured SDLC Execution</h4>
+                <p>From requirements documentation (SRS, ERDs) to sprint deliverables, I ensure every feature is well-scoped, modular, and testable.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fa-brands fa-android"></i></div>
+              <div class="feature-content">
+                <h4>Native Android Engineering</h4>
+                <p>Native app development using Kotlin and Java with activities, fragments, smooth navigation, and persistent local/remote data sync.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="feature-content">
+                <h4>Relational Database Mastery</h4>
+                <p>Deep expertise in 3NF normalization, index optimization, constraint enforcement, and complex query performance using MySQL Workbench.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Proficiencies acquired through rigorous coursework and hands-on production builds.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-container">
+          <button class="filter-tab active" data-filter="all">All Skills</button>
+          <button class="filter-tab" data-filter="languages">Languages</button>
+          <button class="filter-tab" data-filter="mobile">Android / Mobile</button>
+          <button class="filter-tab" data-filter="web">Web & Backend</button>
+          <button class="filter-tab" data-filter="database">Databases</button>
+          <button class="filter-tab" data-filter="tools">Tools & Methods</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Kotlin -->
+          <div class="skill-card" data-category="languages mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon kotlin"><i class="fa-brands fa-android"></i></div>
+              <div>
+                <h4 class="skill-title">Kotlin</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Modern native Android apps, coroutines, clean architecture, and type-safe OOP patterns.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 88%;"></div></div>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card" data-category="languages mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon java"><i class="fa-brands fa-java"></i></div>
+              <div>
+                <h4 class="skill-title">Java</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <p class="skill-desc">Object-oriented architecture, data structures, algorithms, and legacy Android SDK development.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 85%;"></div></div>
+          </div>
+
+          <!-- PHP -->
+          <div class="skill-card" data-category="languages web">
+            <div class="skill-card-top">
+              <div class="skill-icon php"><i class="fa-brands fa-php"></i></div>
+              <div>
+                <h4 class="skill-title">PHP</h4>
+                <span class="skill-level">Full-Stack Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Backend request routing, sessions, role authentication, REST APIs, and database integration.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 90%;"></div></div>
+          </div>
+
+          <!-- MySQL & 3NF -->
+          <div class="skill-card" data-category="languages database">
+            <div class="skill-card-top">
+              <div class="skill-icon mysql"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h4 class="skill-title">MySQL & 3NF</h4>
+                <span class="skill-level">Database Specialist</span>
+              </div>
+            </div>
+            <p class="skill-desc">Third Normal Form (3NF) relational design, foreign keys, triggers, indexing, query optimization.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 92%;"></div></div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card" data-category="languages web">
+            <div class="skill-card-top">
+              <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+              <div>
+                <h4 class="skill-title">JavaScript (ES6+)</h4>
+                <span class="skill-level">Dynamic Frontend</span>
+              </div>
+            </div>
+            <p class="skill-desc">DOM manipulation, AJAX asynchronous calls, event handlers, and responsive interactive logic.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 86%;"></div></div>
+          </div>
+
+          <!-- Android SDK -->
+          <div class="skill-card" data-category="mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon android"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div>
+                <h4 class="skill-title">Android SDK & Studio</h4>
+                <span class="skill-level">Production Ready</span>
+              </div>
+            </div>
+            <p class="skill-desc">Activities, Fragments, ViewBinding, Navigation Components, emulator testing, APK building.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 88%;"></div></div>
+          </div>
+
+          <!-- HTML5 & CSS3 & Bootstrap -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+              <div>
+                <h4 class="skill-title">HTML5 / CSS3 / Bootstrap</h4>
+                <span class="skill-level">Responsive Design</span>
+              </div>
+            </div>
+            <p class="skill-desc">Semantic markup, flexbox, CSS grid, glassmorphism, mobile-first responsive interfaces.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 94%;"></div></div>
+          </div>
+
+          <!-- AJAX & REST APIs -->
+          <div class="skill-card" data-category="web mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon api"><i class="fa-solid fa-network-wired"></i></div>
+              <div>
+                <h4 class="skill-title">AJAX & REST APIs</h4>
+                <span class="skill-level">Integration</span>
+              </div>
+            </div>
+            <p class="skill-desc">JSON data exchange, asynchronous client-server communication, Postman API testing.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 87%;"></div></div>
+          </div>
+
+          <!-- Software Quality & Testing -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon testing"><i class="fa-solid fa-list-check"></i></div>
+              <div>
+                <h4 class="skill-title">SQA & Test Cases</h4>
+                <span class="skill-level">Verification</span>
+              </div>
+            </div>
+            <p class="skill-desc">Functional test case design, edge-case coverage, defensive programming, and regression validation.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 89%;"></div></div>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon git"><i class="fa-brands fa-git-alt"></i></div>
+              <div>
+                <h4 class="skill-title">Git & Version Control</h4>
+                <span class="skill-level">Collaboration</span>
+              </div>
+            </div>
+            <p class="skill-desc">Branching, merge workflows, GitHub releases, version control hygiene, and peer reviews.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 90%;"></div></div>
+          </div>
+
+          <!-- Tools Suite -->
+          <div class="skill-card" data-category="tools database">
+            <div class="skill-card-top">
+              <div class="skill-icon tools"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h4 class="skill-title">Dev Tools Suite</h4>
+                <span class="skill-level">XAMPP, Postman, Workbench</span>
+              </div>
+            </div>
+            <p class="skill-desc">VS Code, Android Studio, XAMPP local stacks, phpMyAdmin, MySQL Workbench schema visualizer.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 92%;"></div></div>
+          </div>
+
+          <!-- OOP & SDLC Architecture -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon oop"><i class="fa-solid fa-cubes"></i></div>
+              <div>
+                <h4 class="skill-title">OOP Architecture & Agile</h4>
+                <span class="skill-level">Design Patterns</span>
+              </div>
+            </div>
+            <p class="skill-desc">SOLID principles, encapsulation, inheritance, Agile/Scrum iterations, requirements modeling.</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="--val: 91%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built with end-to-end software engineering discipline.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: E-Cargo-Bility Web Platform -->
+          <article class="project-card featured-project">
+            <div class="project-badge-tag">
+              <i class="fa-solid fa-star"></i> Final Year Project
+            </div>
+            <div class="project-header">
+              <div class="project-type-icon">
+                <i class="fa-solid fa-truck-moving"></i>
+              </div>
+              <div>
+                <h3 class="project-title">E-Cargo-Bility: Full-Stack Cargo Booking Platform</h3>
+                <span class="project-category">Web Platform • PHP, MySQL, JavaScript, Bootstrap</span>
+              </div>
+            </div>
+
+            <p class="project-description">
+              An end-to-end freight and cargo booking platform designed and built to digitize logistical workflows in Pakistan. 
+              Enables commercial customers to post cargo requests and drivers to accept, quote, and complete freight trips 
+              with real-time state tracking.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Normalized 3NF MySQL Database:</strong> Tables for users, drivers, vehicles, cargo categories, bookings, and financial tracking.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Real-Time Trip Handling:</strong> Dynamic driver matching logic, distance/fare calculation, and live booking status transitions.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Role-Based Access Control:</strong> Distinct user portals for cargo consignors vs. commercial freight drivers.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Full SQA Coverage:</strong> Formulated comprehensive test cases and verified core booking workflows.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL 3NF</span>
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">AJAX</span>
+              <span class="tech-tag">Bootstrap 5</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">XAMPP</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="openProjectModal('cargo-web')">
+                <i class="fa-solid fa-circle-info"></i> View Deep Dive
+              </button>
+              <a href="https://github.com/SauodAzad/my-projects" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+              <a href="assets/docs/E-Cargo-Bility-v1.0.apk" class="btn btn-glass" download="E-Cargo-Bility.apk">
+                <i class="fa-brands fa-android"></i> Companion APK
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Native Android Mobile Apps -->
+          <article class="project-card">
+            <div class="project-badge-tag tag-blue">
+              <i class="fa-brands fa-android"></i> Native Mobile
+            </div>
+            <div class="project-header">
+              <div class="project-type-icon android-icon">
+                <i class="fa-brands fa-android"></i>
+              </div>
+              <div>
+                <h3 class="project-title">Native Android Applications</h3>
+                <span class="project-category">Mobile Development • Android Studio, Kotlin & Java</span>
+              </div>
+            </div>
+
+            <p class="project-description">
+              Suite of native Android applications built from scratch incorporating clean user interface flows, modern fragments, 
+              local data caching, and asynchronous backend communication via RESTful APIs.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Modern UI/UX Flows:</strong> Engineered with activities, fragments, and navigation graphs for seamless screen transitions.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Data Persistence:</strong> Integrated local storage and remote HTTP endpoints for dependable offline/online state synchronization.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Multi-Emulator QA:</strong> Tested across multiple screen densities and Android API levels to guarantee zero UI overflow.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Android Studio</span>
+              <span class="tech-tag">Android SDK</span>
+              <span class="tech-tag">Material Design</span>
+              <span class="tech-tag">REST APIs</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="openProjectModal('android-apps')">
+                <i class="fa-solid fa-circle-info"></i> Architecture Info
+              </button>
+              <a href="assets/docs/E-Cargo-Bility-v1.0.apk" class="btn btn-outline" download="E-Cargo-Bility.apk">
+                <i class="fa-solid fa-download"></i> Download .APK
+              </a>
+              <a href="https://github.com/SauodAzad/my-projects" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Relational Database Architecture -->
+          <article class="project-card">
+            <div class="project-badge-tag tag-green">
+              <i class="fa-solid fa-database"></i> Database Architecture
+            </div>
+            <div class="project-header">
+              <div class="project-type-icon db-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div>
+                <h3 class="project-title">3NF Logistics & Freight Relational Schema</h3>
+                <span class="project-category">Database Modeling • MySQL, Workbench, Normalization</span>
+              </div>
+            </div>
+
+            <p class="project-description">
+              A comprehensive relational database design engineered specifically for multi-tenant cargo logistics. 
+              Guarantees strict data integrity, eliminates anomalies through 3NF normalization, and provides sub-second query execution.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Schema Optimization:</strong> Modeled entities including Driver, VehicleSpecs, ShipmentRequest, FareSchedule, and AuditLogs.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Referential Integrity:</strong> Cascade behaviors, indexing on high-frequency join columns, and defensive constraints.</span>
+              </div>
+              <div class="highlight-bullet">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Complete Documentation:</strong> Comprehensive Entity-Relationship Diagrams (ERDs) and dictionary documentation.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">3NF Normalization</span>
+              <span class="tech-tag">MySQL Workbench</span>
+              <span class="tech-tag">SQL Joins & Indexing</span>
+              <span class="tech-tag">ER Diagrams</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="openProjectModal('database-design')">
+                <i class="fa-solid fa-circle-info"></i> Inspect Schema Details
+              </button>
+              <a href="https://github.com/SauodAzad/my-projects" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub Scripts
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE COMPETENCIES & SDLC SECTION -->
+    <section class="section competencies-section" id="competencies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Methodology & Strengths</span>
+          <h2 class="section-title">Core Competencies & Engineering Focus</h2>
+          <p class="section-subtitle">The software engineering standards that shape my approach to problem solving.</p>
+        </div>
+
+        <div class="competencies-grid">
+          <div class="competency-card">
+            <div class="comp-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3>Requirements Gathering & Documentation</h3>
+            <p>Eliciting functional requirements from stakeholders, authoring formal SRS documents, use cases, and functional specs that bridge domain needs with code.</p>
+          </div>
+
+          <div class="competency-card">
+            <div class="comp-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>Software Quality Engineering & Testing</h3>
+            <p>Designing structured test cases, boundary-value analysis, functional verification, and defensive programming to guarantee zero critical failure states.</p>
+          </div>
+
+          <div class="competency-card">
+            <div class="comp-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <h3>Database Design & 3NF Normalization</h3>
+            <p>Formulating relational schemas with zero functional redundancy, optimized indexing, referential integrity rules, and scalable data dictionary modeling.</p>
+          </div>
+
+          <div class="competency-card">
+            <div class="comp-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Problem Solving & Analytical Thinking</h3>
+            <p>Deconstructing complex system requirements into manageable, modular OOP components with clean separation of concerns and high maintainability.</p>
+          </div>
+
+          <div class="competency-card">
+            <div class="comp-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3>Team Collaboration & Peer Code Reviews</h3>
+            <p>Active participant in university technical discussions, collaborative GitHub branching, peer code audits, and constructive architectural feedback.</p>
+          </div>
+
+          <div class="competency-card">
+            <div class="comp-icon"><i class="fa-solid fa-stopwatch"></i></div>
+            <h3>Time Management & Deadline Delivery</h3>
+            <p>Delivering production milestones on schedule through disciplined task prioritization, Agile/Scrum task boards, and steady incremental iterations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & ACADEMICS SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Rigorous software engineering curriculum at Riphah International University.</p>
+        </div>
+
+        <div class="education-timeline">
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div class="degree-info">
+                <h3>Bachelor of Science in Software Engineering (BSSE)</h3>
+                <h4 class="institution">Riphah International University, I-14 Campus, Islamabad</h4>
+              </div>
+              <div class="timeline-badge">2022 – 2026</div>
+            </div>
+
+            <div class="timeline-body">
+              <p>
+                Pursuing a comprehensive 4-year degree focusing on the complete software development lifecycle, 
+                advanced computing concepts, and enterprise software architecture. Consistently maintaining strong academic standing.
+              </p>
+
+              <h5 class="coursework-title"><i class="fa-solid fa-book-open"></i> Relevant Coursework & Focus Areas:</h5>
+              <div class="coursework-tags">
+                <span class="course-tag">Object-Oriented Programming (OOP)</span>
+                <span class="course-tag">Data Structures & Algorithms</span>
+                <span class="course-tag">Database Systems (DBMS)</span>
+                <span class="course-tag">Software Requirements Engineering (SRE)</span>
+                <span class="course-tag">Software Quality Engineering (SQE)</span>
+                <span class="course-tag">Software Design & Architecture</span>
+                <span class="course-tag">Mobile Application Development</span>
+                <span class="course-tag">Web Engineering</span>
+                <span class="course-tag">Human-Computer Interaction (HCI)</span>
+              </div>
+
+              <div class="timeline-achievements">
+                <div class="achievement-item">
+                  <i class="fa-solid fa-award"></i>
+                  <span><strong>Academic Performance:</strong> Strong academic record throughout the BSSE program.</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fa-solid fa-code-branch"></i>
+                  <span><strong>Practical SDLC Delivery:</strong> Applied structured SDLC methodology across coursework projects, from requirements to delivery.</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <span><strong>Proactive Self-Learning:</strong> Expanded beyond curriculum by mastering modern Kotlin, Android SDK, and PHP frameworks independently.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Open for software engineering opportunities, internships, contracts, and collaborations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Channels -->
+          <div class="contact-info-cards">
+            <!-- Email Card -->
+            <a href="mailto:sauodriphah@gmail.com" class="contact-card">
+              <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email Me</h4>
+                <p>sauodriphah@gmail.com</p>
+                <span class="contact-action-hint">Send Email <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <!-- WhatsApp Card -->
+            <a href="https://wa.me/923135151023?text=Hi%20Sauod,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp-card">
+              <div class="contact-icon wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-details">
+                <h4>WhatsApp Chat</h4>
+                <p>+92 313 5151023</p>
+                <span class="contact-action-hint">Direct Message <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <!-- Phone Card -->
+            <div class="contact-card phone-card">
+              <div class="contact-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <h4>Call Directly</h4>
+                <p><a href="tel:+923135151023">0313-5151023</a> / <a href="tel:+923107866945">0310-7866945</a></p>
+                <span class="contact-action-hint">Available for inquiries</span>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card loc-card">
+              <div class="contact-icon loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Gulraiz Phase 2, Rawalpindi / Islamabad, Pakistan</p>
+                <span class="contact-action-hint">Open to on-site & remote roles</span>
+              </div>
+            </div>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/SauodAzad/my-projects" target="_blank" rel="noopener noreferrer" class="contact-card github-card">
+              <div class="contact-icon git-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-details">
+                <h4>GitHub Portfolio</h4>
+                <p>github.com/SauodAzad/my-projects</p>
+                <span class="contact-action-hint">Explore Repositories <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right: Interactive Message Box -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-desc">Fill out this quick form to send me an email or initiate an instant WhatsApp conversation.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="senderName">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="senderName" name="name" required placeholder="e.g. John Doe">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail">Your Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="senderEmail" name="email" required placeholder="e.g. john@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="senderSubject" name="subject" required placeholder="Project Inquiry / Job Opportunity">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-solid fa-message"></i>
+                  <textarea id="senderMessage" name="message" rows="4" required placeholder="Hi Sauod, I would like to discuss..."></textarea>
+                </div>
+              </div>
+
+              <div class="form-submit-buttons">
+                <button type="submit" class="btn btn-primary btn-lg w-full" id="submitEmailBtn">
+                  <i class="fa-solid fa-paper-plane"></i> Send via Email Client
+                </button>
+                <button type="button" class="btn btn-whatsapp btn-lg w-full" id="submitWhatsAppBtn">
+                  <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                </button>
+              </div>
+
+              <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-symbol">&lt;SA/&gt;</span>
+          <span class="logo-text">Sauod Azad</span>
+        </a>
+        <p class="footer-tagline">Software Engineer • Native Android & Full-Stack Web Development</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/SauodAzad/my-projects" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/923135151023" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:sauodriphah@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>© 2026 Sauod Azad. All rights reserved.</p>
+        <p>Built with clean code & modern aesthetics</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME PREVIEW MODAL (<dialog>) -->
+  <dialog id="resumeModal" class="custom-dialog">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <div class="dialog-title-group">
+          <i class="fa-solid fa-file-pdf text-accent"></i>
+          <h3>Sauod Azad — Resume</h3>
+        </div>
+        <div class="dialog-actions">
+          <a href="assets/docs/Sauod_Azad_Resume.pdf" class="btn btn-sm btn-primary" download="Sauod_Azad_CV.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+          <button class="dialog-close-btn" id="closeResumeModalBtn" aria-label="Close dialog">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="dialog-body">
+        <iframe src="assets/docs/Sauod_Azad_Resume.pdf" title="Sauod Azad Resume Preview" class="resume-iframe"></iframe>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- PROJECT DEEP DIVE MODAL -->
+  <dialog id="projectModal" class="custom-dialog project-deepdive-dialog">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <div class="dialog-title-group">
+          <i class="fa-solid fa-diagram-project text-accent"></i>
+          <h3 id="modalProjectTitle">Project Details</h3>
+        </div>
+        <button class="dialog-close-btn" id="closeProjectModalBtn" aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="dialog-body" id="modalProjectBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Floating Scroll-To-Top Button -->
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll back to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
